@@ -1,0 +1,89 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/kind/kind",
+    "pages/cart/cart",
+    "pages/user/user"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f66",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "嗨购",
+    "navigationStyle": "default",
+    "homeButton": true,
+    "backgroundColor": "#123123",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "pageOrientation": "portrait"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#f66",
+    "backgroundColor": "#efefef",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "resources/tabBar/home.png",
+        "selectedIconPath": "resources/tabBar/home_active.png"
+      },
+      {
+        "pagePath": "pages/kind/kind",
+        "text": "分类",
+        "iconPath": "resources/tabBar/kind.png",
+        "selectedIconPath": "resources/tabBar/kind_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "resources/tabBar/cart.png",
+        "selectedIconPath": "resources/tabBar/cart_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "resources/tabBar/user.png",
+        "selectedIconPath": "resources/tabBar/user_active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 6000,
+    "connectSocket": 4000,
+    "uploadFile": 600000,
+    "downloadFile": 6000000
+  },
+  "subPackages": [
+    {
+      "root": "pckSearch",
+      "name": "pckSearch",
+      "pages": [
+        "pages/search/search",
+        "pages/result/result"
+      ],
+      "independent": true 
+    },
+    {
+      "root": "pckUser",
+      "name": "pckUser",
+      "pages": [
+        "pages/login/login",
+        "pages/register/register"
+      ]
+    }
+  ],
+ "preloadRule": {
+   "pages/home/home": {
+     "network": "all",
+     "packages": [
+      "pckSearch"
+     ]
+   }
+ },
+  "debug": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
