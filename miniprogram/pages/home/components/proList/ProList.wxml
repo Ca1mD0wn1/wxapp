@@ -1,0 +1,10 @@
+<!--pages/home/components/proList.wxml-->
+<van-card
+	wx:for="{{ list }}"
+	wx:key="proid"
+  price="{{ item.originprice }}"
+  title="{{ item.proname }}"
+  thumb="{{ item.img1 }}"
+  bindtap="toDetail"
+  data-proid="{{item.proid}}"
+/>

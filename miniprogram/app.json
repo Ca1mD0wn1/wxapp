@@ -5,14 +5,14 @@
     "pages/logs/logs",
     "pages/kind/kind",
     "pages/cart/cart",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/detail/detail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#f66",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "嗨购",
     "navigationStyle": "default",
-    "homeButton": true,
     "backgroundColor": "#123123",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true,
@@ -64,7 +64,7 @@
         "pages/search/search",
         "pages/result/result"
       ],
-      "independent": true 
+      "independent": true
     },
     {
       "root": "pckUser",
@@ -75,15 +75,14 @@
       ]
     }
   ],
- "preloadRule": {
-   "pages/home/home": {
-     "network": "all",
-     "packages": [
-      "pckSearch"
-     ]
-   }
- },
+  "preloadRule": {
+    "pages/home/home": {
+      "network": "all",
+      "packages": [
+        "pckSearch"
+      ]
+    }
+  },
   "debug": true,
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

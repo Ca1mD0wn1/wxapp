@@ -1,0 +1,11 @@
+<!--pages/home/components/nav/Nav.wxml-->
+<!--pages/home/components/nav/Nav.wxml-->
+<van-grid
+	column-num="{{5}}"
+	icon-size ="{{44}}"
+	square
+	border="{{false}}"
+>
+  <van-grid-item wx:for="{{list}}" wx:key="navid" icon="{{ item.imgurl }}" text="{{item.title}}" />
+</van-grid>
+

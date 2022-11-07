@@ -1,4 +1,11 @@
 {
   "navigationBarTitleText": "首页",
-  "usingComponents": {}
+
+  
+  "usingComponents": {  
+    "my-banner": "./components/banner/Banner",
+    "my-nav": "./components/nav/Nav",
+    "pro-list": "./components/proList/ProList",
+    "van-icon": "@vant/weapp/icon/index"
+  }
 }

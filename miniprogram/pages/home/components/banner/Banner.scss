@@ -1,0 +1,12 @@
+/* pages/home/components/banner/Banner.wxss */
+.bannerSwiper {
+	width: 96%;
+	margin: 10px 2%;
+	height: 320rpx;
+	background-color: #ccc;
+	overflow: hidden;
+	border-radius: 10px;
+	.bannerImg {
+		width: 100%;
+	}
+}

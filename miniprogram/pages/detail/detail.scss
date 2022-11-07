@@ -1,0 +1,14 @@
+/* pages/detail.wxss */
+.tip {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 30px;
+  background-color: #efefef;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  border-radius: 15px 0 0 15px;
+}

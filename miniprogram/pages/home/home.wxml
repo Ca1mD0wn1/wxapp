@@ -1,2 +1,22 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 自定义头部 -->
+<view class="slider-bg" >
+</view>
+<view class="box" style="height: {{statusBarHeight }}px"></view>
+<view class="top" style="top: {{statusBarHeight }}px">首页</view>
+<view class="bottom" style="top: {{ 44 + statusBarHeight }}px">搜索框</view>
+<view style="height: {{ statusBarHeight + 88}}px;"></view>
+<!-- 轮播图 -->
+<my-banner list="{{ bannerList }}"></my-banner>
+<!-- nav导航 -->
+<my-nav list="{{ navList }}"></my-nav>
+<!-- 产品列表 -->
+<pro-list list="{{ proList }}"></pro-list>
+
+<view 
+	class="backTop"
+	bindtap="backTop"
+	wx:if="{{ scrollTop > 300 }}"
+>
+	<van-icon name="arrow-up" size="24"/>
+</view>
